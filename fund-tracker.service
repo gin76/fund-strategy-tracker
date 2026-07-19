@@ -1,0 +1,16 @@
+[Unit]
+Description=Fund Tracker Web App
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/fund-tracker
+ExecStart=/usr/local/bin/uvicorn server:app --host 0.0.0.0 --port 8080
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+fund_state.json
+backups/
+static/marketing/
+CLAUDE.md
+AGENTS.md
+__pycache__/
+*.pyc
+.DS_Store
+static/.!*
+.pytest_cache/
+.venv/
+159307_*/
+docs/
